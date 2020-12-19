@@ -25,3 +25,5 @@ Lancer les conteneurs
 ```bash
 sudo docker-compose up
 ```
+
+Se rendre sur l'URL http://127.0.0.1 et réactualiser la page plusieurs fois pour observer la répartition de charge entre les différents serveurs web. 
