@@ -1,7 +1,7 @@
 # Description
-Ce petit projet est une infrastructure de reverse proxy et loadbalacing basée sur des conteneurs docker nginx. Mon [article de blog](https://foxblog.fr/repartition-de-charge-a-laide-de-nginx-et-docker/) explique plus précisément le fonctionnement de l'infrastructure. 
+Ce petit projet est une infrastructure de reverse proxy et loadbalacing basée sur des conteneurs docker nginx. Mon [article de blog](https://foxblog.fr/repartition-de-charge-a-laide-de-nginx-et-docker/) explique plus précisément la mise en place de l'infrastructure. 
 
-Ce projet est encore en cours de développement. La version fonctionnelle est la version 1.0. 
+Ce projet est encore en cours de développement. La version fonctionnelle est la version 1.0.
 
 # Prérequis
 
@@ -12,8 +12,16 @@ Ce projet est encore en cours de développement. La version fonctionnelle est la
 # Utilisation
 
 Cloner le dépôt dans un dossier local. 
+```bash
+git clone git@github.com:n1c0x/reverse-proxy-dev.git
+```
 
+Construire les conteneurs
 ```bash
 sudo docker-compose build
+```
+
+Lancer les conteneurs
+```bash
 sudo docker-compose run
 ```

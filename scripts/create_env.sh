@@ -46,19 +46,19 @@ create_folder_tree(){
     fi
 
     echo "Creating the reverse proxy tree ..."
-    if [ ! -d "rp" ]; then
-        mkdir rp
-        echo "${GREEN}Folder rp created.${NOCOLOR}"
-        cd rp
+    if [ ! -d "lb" ]; then
+        mkdir lb
+        echo "${GREEN}Folder lb created.${NOCOLOR}"
+        cd lb
         if [ ! -d "logs" ]; then
             mkdir logs
-            echo "${GREEN}\tLogs for rp created.${NOCOLOR}"
+            echo "${GREEN}\tLogs for lb created.${NOCOLOR}"
             cd ../
         else
-                echo "Log for rp already exists."
+                echo "Log for lb already exists."
             fi
     else
-        echo "${RED}rp folder already exists.${NOCOLOR}"
+        echo "${RED}lb folder already exists.${NOCOLOR}"
     fi
 }
 
@@ -71,8 +71,8 @@ create_html_files(){
             if [ -d "www$i" ]; then
                 cd www$i
                 if [ ! -f "index.html" ]; then
-                    echo "Creating www$i index.html file"
                     echo "<h1>Hello $i</h1>" > index.html
+                    echo "${GREEN} index.html file created.${NOCOLOR}"
                     cd ../
                 else
                     echo "index.html file already exists in www$i folder."
