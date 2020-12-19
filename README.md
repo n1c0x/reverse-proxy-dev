@@ -23,5 +23,5 @@ sudo docker-compose build
 
 Lancer les conteneurs
 ```bash
-sudo docker-compose run
+sudo docker-compose up
 ```
