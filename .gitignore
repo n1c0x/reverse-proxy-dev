@@ -1,0 +1,6 @@
+# ignore all logs
+*.log
+
+portainer/portainer.key
+portainer.db
+.vscode
